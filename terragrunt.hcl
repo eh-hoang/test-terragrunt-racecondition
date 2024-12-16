@@ -16,7 +16,6 @@ remote_state {
     bucket         = "digger-s3backend-test-terragrunt-racecondition"
     key            = "${path_relative_to_include()}/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "terraform-locks"
   }
   generate = {
     path      = "backend.tf"
